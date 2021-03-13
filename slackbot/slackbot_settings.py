@@ -3,7 +3,7 @@
 #slackbotの初期設定
 
 # botアカウントのトークンを指定
-API_TOKEN = "xoxb-1841717889987-1848302638516-u3PPBJ0mIO9lB85CJ0Ig4jfc"
+API_TOKEN = "my_API_TOKEN"
 
 # このbot宛のメッセージで、どの応答にも当てはまらない場合の応答文字列
 DEFAULT_REPLY = "合言葉が違います"
