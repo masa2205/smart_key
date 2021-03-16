@@ -1,15 +1,13 @@
 # coding: utf-8
 
-#slackbotの初期設定
+# botアカウントのトークン指定
+API_TOKEN = "API＿TOKENを追加"
 
-# botアカウントのトークンを指定
-API_TOKEN = "my_API_TOKENを追加"
-
-# このbot宛のメッセージで、どの応答にも当てはまらない場合の応答文字列
+# bot宛のメッセージ内において特定の応答以外が入力された際に返す応答文字列
 DEFAULT_REPLY = "合言葉が違います"
 
-# プラグインスクリプトを置いてあるサブディレクトリ名
+# プラグインスクリプトが置いてあるサブディレクトリ名
 PLUGINS = ['plugins']
 
-# 投稿するslack上のチャンネル
-ERRORS_TO = 'スマートキー'
+# 投稿するslack上のチャンネル名
+ERRORS_TO = 'チャンネルを追加'
