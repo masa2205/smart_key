@@ -1,12 +1,6 @@
 # *アレクサとラズベリーパイを使用し、声で家の鍵を開けれるようにした*  
   <br>
 
-  <img width="400" alt="完成品" src=":https://user-images.githubusercontent.com/65245621/111368124-ce789900-86d8-11eb-94bc-c057377265b3.gif">  
-
-  <br>
-  <br>
-  <br>
-
 - 1.用意した物  
     * Raspberry Pi(以下ラズパイ) 3 model B+  
     * MacBook pro  
@@ -104,8 +98,10 @@
 
 - Pythonのslackbotライブラリでslackbotを作る  
 
-  ・slacbotライブラリのインストール  
+  ・slacbotライブラリのインストール 
+  ``` 
      $ sudo pip3 install slackbot  
+  ```   
 
   ・slacbotを起動させるファイル構成  
   ```
@@ -213,7 +209,7 @@
   ```      
 
   ・exec.pyファイルに組み込む  
-
+
   ・slack上で特定の文字を入力し、サーボモーターの駆動とメンションリプライの返信を確認する  
   <br>
 
