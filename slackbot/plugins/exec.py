@@ -30,3 +30,4 @@ def close_key(message):  #鍵を閉める際のサーボモーターの制御
     pi.set_servo_pulsewidth(SERVO_PIN, 1850)
 
     message.reply('closed！')
+    
