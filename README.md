@@ -1,6 +1,6 @@
 # *アレクサとラズベリーパイを使用し、声で家の鍵を開けれるようにした*  
   <br>
-<img width="300" alt="travel" src="https://user-images.githubusercontent.com/65245621/111405210-6f844580-8713-11eb-8565-d95b77bdbc84.PNG">
+<img width="300" alt="完成品" src="https://user-images.githubusercontent.com/65245621/111405210-6f844580-8713-11eb-8565-d95b77bdbc84.PNG">
 
 　<br>
 - 1.用意した物  
@@ -17,7 +17,7 @@
     * ドライバー等工具  
 
 - 2.使用したプログラム  
-    * Python  
+    * Python  3.7.3
     * Slackbot  
 
 - 3.使用した外部サービス  
@@ -31,15 +31,17 @@
 - ラズパイセットアップ  
 
   ・Raspbian(OS)のダウンロード  
-    1. ラズパイに直接キーボード、モニターを接続    <font color="green"># USBキーボード、HDMIケーブル、HDMIで接続できるモニターを使用</font>
+    1. ラズパイに直接キーボード、モニターを接続    <font color="green">(USBキーボード、HDMIケーブル、HDMIで接続できるモニターを使用)</font>
+
     2. ラズパイを起動  
     3. CHOOSE OS をクリックして利用するイメージを選択  
     4. CHOOSE SD CARD をクリックして書き込み先のSDカードを選択  
     5. WRITEボタンをクリックして書き込み  
     6. Raspbian(OS)をインストール  
 
-  ・初期設定   <font color="green">#「Welcome to Raspberry Pi」のウィンドウに従って、初期設定を進める  </font>
+  ・初期設定   <font color="green">(「Welcome to Raspberry Pi」のウィンドウに従って、初期設定を進める)  </font>
     1. 地域選択  
+
     2. デフォルトユーザのパスワードを入力  
     3. wi-fi設定  
 
@@ -60,7 +62,8 @@
      $ sudo touch /boot/ssh  
     ```
     2. 設定からSSHを有効にする  
-    3. 設定からパスワードを変更   <font color="green"># デフォルト ユーザー名:'pi', パスワード:raspberry</font>  
+
+    3. 設定からパスワードを変更   <font color="green">(デフォルト ユーザー名:'pi', パスワード:raspberry)</font>  
     4. ラズパイを再起動  
     5. 別のPCからSSHで接続確認  
     ```
@@ -92,6 +95,7 @@
 - slack上での作業  
   
   ・slack上でチャンネル、botの作成  
+
   ・APIトークンの取得  
   <br>
 
@@ -125,15 +129,16 @@
      ```       
 
   ・slackbotの初期設定  
+
      run.py  slackbot_settings.py exac.pyファイルの中身をコーディング   
-      <font color="green"># この時点ではbotの機能のみの実装  </font>
+      <font color="green">(この時点ではbotの機能のみの実装)  </font>
 
   ・slackbotを起動し動作確認  
   ```
      $ python3 run.py  
   ```   
 
-  ・botのデーモン化   <font color="green"># run.pyファイルをデーモン化する </font>
+  ・botのデーモン化   <font color="green">(run.pyファイルをデーモン化する) </font>
 
      1. /etc/systemd/system/以下にserviceファイルを作成  
      ```
@@ -220,8 +225,9 @@
 
 - slackとAlexaの連携  
 
-  ・IFTTTを使用しIFTTT上で設定   <font color="green"># スマホでもPCでも同じ操作 </font> 
+  ・IFTTTを使用しIFTTT上で設定   <font color="green">(スマホでもPCでも同じ操作) </font> 
     1. IFTTTのメニューからCreateを選択  
+
     2. Thisをクリック  
     3. Choose serviceからAlexaを検索  
     4. connectをクリック  
@@ -238,8 +244,9 @@
 
 
   ・Alexa上で特定の言葉を設定し、音声認識によりIFTTTの発動条件と連携させる     
-         <font color="green">#スマホのアレクサアプリから設定  </font>
+         <font color="green">(スマホのアレクサアプリから設定)  </font>
     1. その他 をタップ  
+
     2. 定形アクション をタップ  
     3. 定形アクション名を入力  
     4. 実行条件を設定  
