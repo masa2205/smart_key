@@ -1,6 +1,8 @@
 # *アレクサとラズベリーパイを使用し、声で家の鍵を開けれるようにした*  
   <br>
+<img width="300" alt="travel" src="https://user-images.githubusercontent.com/65245621/111405210-6f844580-8713-11eb-8565-d95b77bdbc84.PNG">
 
+　<br>
 - 1.用意した物  
     * Raspberry Pi(以下ラズパイ) 3 model B+  
     * MacBook pro  
