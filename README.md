@@ -2,6 +2,8 @@
 
 <img width="300" alt="完成品" src="https://user-images.githubusercontent.com/65245621/111405210-6f844580-8713-11eb-8565-d95b77bdbc84.PNG">
 
+[動画はこちら](https://www.youtube.com/watch?v=UwILQA1bzJ8)
+
 ***
 
 # IoT概要
